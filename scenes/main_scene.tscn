@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2wbu0b5aisnf"]
+
+[ext_resource type="PackedScene" uid="uid://dipsavl3yxgd1" path="res://scenes/ground.tscn" id="1_pw63i"]
+[ext_resource type="PackedScene" uid="uid://d4e2kd6sydl3q" path="res://scenes/Player.tscn" id="1_w2twt"]
+[ext_resource type="PackedScene" uid="uid://sw3yjpo7nr7e" path="res://scenes/coin.tscn" id="3_7ykc4"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Ground" parent="." instance=ExtResource("1_pw63i")]
+position = Vector2(2, 12)
+
+[node name="persone" parent="." instance=ExtResource("1_w2twt")]
+position = Vector2(0, -31)
+
+[node name="Camera2D" type="Camera2D" parent="persone"]
+position = Vector2(1, 22)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Coin" parent="Node" instance=ExtResource("3_7ykc4")]
+position = Vector2(87, -23)
+
+[node name="Coin2" parent="Node" instance=ExtResource("3_7ykc4")]
+position = Vector2(-43, -76)
+
+[node name="Coin3" parent="Node" instance=ExtResource("3_7ykc4")]
+position = Vector2(-77, -22)
+
+[node name="Coin4" parent="Node" instance=ExtResource("3_7ykc4")]
+position = Vector2(46, -75)

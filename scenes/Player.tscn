@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4e2kd6sydl3q"]
 
 [ext_resource type="Script" uid="uid://cbbptvgp4qrrk" path="res://scripts/Player.cs" id="1_8vh34"]
-[ext_resource type="Texture2D" uid="uid://dpaqwkh8tgfk2" path="res://icon.svg" id="1_embp0"]
+[ext_resource type="Texture2D" uid="uid://dllq2kfvd7di4" path="res://Assets/0x72_DungeonTilesetII_v1.7/0x72_DungeonTilesetII_v1.7.png" id="2_v6fml"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lu56h"]
-radius = 12.0416
+radius = 5.98023
 
 [node name="persone" type="Node2D"]
 
@@ -13,10 +13,16 @@ collision_mask = 517
 script = ExtResource("1_8vh34")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
-position = Vector2(1, -12)
-scale = Vector2(0.158203, 0.170898)
-texture = ExtResource("1_embp0")
+position = Vector2(0, -14)
+scale = Vector2(0.802937, 0.847953)
+texture = ExtResource("2_v6fml")
+region_enabled = true
+region_rect = Rect2(128, 64, 16, 32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(1, -12)
+position = Vector2(0, -8)
+scale = Vector2(1.00331, 1)
 shape = SubResource("CircleShape2D_lu56h")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(4, 4)

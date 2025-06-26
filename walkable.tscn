@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwggatdh2tah6"]
+
+[ext_resource type="Script" uid="uid://bvhpde4yj5y0q" path="res://addons/gaea/generators/2D/walker_generator/walker_generator.gd" id="1_1inut"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WalkerGenerator" type="Node" parent="."]
+script = ExtResource("1_1inut")
+metadata/_custom_type_script = "uid://bvhpde4yj5y0q"

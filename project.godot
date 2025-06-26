@@ -24,6 +24,10 @@ MoneyManager="*res://scripts/Managers/MoneyManager.cs"
 
 project/assembly_name="тесты механик"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gaea/plugin.cfg")
+
 [input]
 
 MoveUp={

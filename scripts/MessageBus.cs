@@ -3,7 +3,6 @@ using Godot;
 
 public partial class MessageBus : Node
 {
-
 	private static MessageBus _instance;
 
 	public static MessageBus Instance
@@ -18,7 +17,7 @@ public partial class MessageBus : Node
 				}
 				if (_instance == null)
 				{
-					GD.PrintErr("MessageBus singleton instance not found! Add MessageBus node to scene tree.");
+					GD.PrintErr("Bus singleton instance not found! Add Bus node to scene tree.");
 				}
 			}
 			return _instance;
@@ -27,11 +26,12 @@ public partial class MessageBus : Node
 
 	public override void _Ready()
 	{
-		if (_instance != null)
+		if (_instance != null && _instance != this)
 		{
 			QueueFree(); // Удаляем дубликат
 			return;
 		}
+
 		_instance = this;
 	}
 

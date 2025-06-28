@@ -17,8 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-MessageBus="res://scripts/MessageBus.cs"
 MoneyManager="*res://scripts/Managers/MoneyManager.cs"
+MovementController="*res://scripts/Managers/MovementController.cs"
+MessageBus="*res://scripts/MessageBus.cs"
 
 [dotnet]
 

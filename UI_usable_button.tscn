@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6d88qkyl4if6"]
+
+[ext_resource type="Texture2D" uid="uid://dpaqwkh8tgfk2" path="res://icon.svg" id="1_bp1xr"]
+[ext_resource type="Texture2D" uid="uid://cjlkf512gueoe" path="res://Assets/Sprite-0001.png" id="2_a7kwv"]
+
+[node name="Control" type="TextureButton"]
+anchors_preset = -1
+anchor_right = 0.589
+anchor_bottom = 0.563
+offset_right = -399.528
+offset_bottom = -92.824
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.0137014, 0.0136222)
+texture_normal = ExtResource("1_bp1xr")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="CooldownBar" type="TextureProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -277.0
+offset_right = 22.0
+offset_bottom = -257.0
+grow_vertical = 0
+scale = Vector2(13.7233, 13.7233)
+step = 0.01
+value = 75.0
+fill_mode = 5
+texture_progress = ExtResource("2_a7kwv")
+tint_progress = Color(0.0392157, 0.0392157, 0.0392157, 0.576471)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -71.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Q"
+vertical_alignment = 2
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -71.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "11"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="Panel" type="Panel" parent="."]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

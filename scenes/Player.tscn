@@ -27,18 +27,13 @@ zoom = Vector2(5, 5)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="SkillBar" type="HBoxContainer" parent="CanvasLayer"]
-anchors_preset = -1
-anchor_left = -0.013
-anchor_right = 0.048
-anchor_bottom = 0.048
-offset_left = 20.976
-offset_top = -1.0
-offset_right = -0.296001
-offset_bottom = 4.896
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = -79.0
+offset_top = 54.0
+offset_right = -13.0
+offset_bottom = 87.0
+scale = Vector2(0.300939, 0.299302)
 
-[node name="SpellButton" parent="CanvasLayer/SkillBar" instance=ExtResource("3_3li8b")]
+[node name="SpellButton2" parent="CanvasLayer/HBoxContainer" instance=ExtResource("3_3li8b")]
 layout_mode = 2
-
-[node name="SpellButton2" parent="CanvasLayer/SkillBar" instance=ExtResource("3_3li8b")]
-layout_mode = 2
+size_flags_horizontal = 0

@@ -28,12 +28,27 @@ zoom = Vector2(5, 5)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
-offset_left = -79.0
-offset_top = 54.0
-offset_right = -13.0
-offset_bottom = 87.0
+anchors_preset = -1
+anchor_left = -0.0121528
+anchor_top = -0.0185185
+anchor_right = 0.030428
+anchor_bottom = 0.0124278
+offset_right = 113.947
+offset_bottom = 46.9468
 scale = Vector2(0.300939, 0.299302)
+size_flags_horizontal = 4
+theme_override_constants/separation = 24
+metadata/_edit_use_anchors_ = true
 
 [node name="SpellButton2" parent="CanvasLayer/HBoxContainer" instance=ExtResource("3_3li8b")]
 layout_mode = 2
 size_flags_horizontal = 0
+
+[node name="SpellButton" parent="CanvasLayer/HBoxContainer" instance=ExtResource("3_3li8b")]
+layout_mode = 2
+
+[node name="SpellButton3" parent="CanvasLayer/HBoxContainer" instance=ExtResource("3_3li8b")]
+layout_mode = 2
+
+[node name="SpellButton4" parent="CanvasLayer/HBoxContainer" instance=ExtResource("3_3li8b")]
+layout_mode = 2

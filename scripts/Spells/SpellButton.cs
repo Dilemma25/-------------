@@ -10,13 +10,15 @@ public partial class SpellButton : TextureButton
 	[Export]
 	NodePath keyPath;
 
-	private ProgressBar cooldownBarNode;
+	private TextureProgressBar cooldownBarNode;
 	private Label keyNode;
 	private Label cooldownNode;
 
+	private string _changeKey;
+
 	private void GetNodesByPath()
 	{
-		cooldownBarNode = GetNode<ProgressBar>(cooldownBarPath);
+		cooldownBarNode = GetNode<TextureProgressBar>(cooldownBarPath);
 		cooldownNode = GetNode<Label>(cooldownPath);
 		keyNode = GetNode<Label>(keyPath);
 	}
@@ -31,7 +33,7 @@ public partial class SpellButton : TextureButton
 	{
 		set
 		{
-			changeKey = value;
+			_changeKey = value;
 			keyNode.Text = value;
 
 			Shortcut = new Shortcut();
@@ -43,6 +45,8 @@ public partial class SpellButton : TextureButton
 
 			Shortcut.Events = [inputKey];
 		}
+
+		get => _changeKey;
 	}
 
 

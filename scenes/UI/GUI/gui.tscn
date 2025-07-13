@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://byod7n46dgncb"]
+
+[ext_resource type="PackedScene" uid="uid://2qiciivby3my" path="res://scenes/UI/GUI/buttons/spell_button.tscn" id="1_mtx2o"]
+
+[node name="GUI" type="CanvasLayer"]
+follow_viewport_scale = 1.1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -138.0
+offset_top = -90.9999
+offset_right = -66.0
+offset_bottom = -50.9999
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2.28673, 2.26695)
+size_flags_vertical = 8
+theme_override_constants/separation = 24
+
+[node name="SpellButton" parent="HBoxContainer" instance=ExtResource("1_mtx2o")]
+layout_mode = 2
+
+[node name="SpellButton2" parent="HBoxContainer" instance=ExtResource("1_mtx2o")]
+layout_mode = 2
+
+[node name="SpellButton3" parent="HBoxContainer" instance=ExtResource("1_mtx2o")]
+layout_mode = 2

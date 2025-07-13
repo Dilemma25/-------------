@@ -1,18 +1,36 @@
-[gd_scene load_steps=4 format=3 uid="uid://d2wbu0b5aisnf"]
+[gd_scene load_steps=7 format=3 uid="uid://d2wbu0b5aisnf"]
 
 [ext_resource type="PackedScene" uid="uid://cjqldvfwp5ibh" path="res://scenes/Player.tscn" id="1_w2twt"]
 [ext_resource type="PackedScene" uid="uid://sw3yjpo7nr7e" path="res://scenes/coin.tscn" id="3_7ykc4"]
 [ext_resource type="PackedScene" uid="uid://bg01skpop3ra1" path="res://scenes/FloorGenerator.tscn" id="3_gubc5"]
+[ext_resource type="PackedScene" uid="uid://byod7n46dgncb" path="res://scenes/UI/GUI/gui.tscn" id="4_pu3yx"]
+[ext_resource type="Script" uid="uid://bxskffr2gjwix" path="res://scenes/player_2.gd" id="5_rt2n2"]
+[ext_resource type="Texture2D" uid="uid://c1qxdofixn3jl" path="res://Assets/0x72_DungeonTilesetII_v1.7/frames/knight_f_idle_anim_f0.png" id="6_c16ls"]
 
 [node name="MainScene" type="Node2D"]
 
 [node name="FloorGenerator" parent="." instance=ExtResource("3_gubc5")]
-position = Vector2(24, -36)
+position = Vector2(38, -70)
 
 [node name="Coins" type="Node" parent="."]
 
 [node name="Coin2" parent="Coins" instance=ExtResource("3_7ykc4")]
-position = Vector2(-23, 23)
+position = Vector2(36, 67)
 
 [node name="Player" parent="." instance=ExtResource("1_w2twt")]
-position = Vector2(0, 1)
+visible = false
+position = Vector2(0, -4)
+
+[node name="GUI" parent="." instance=ExtResource("4_pu3yx")]
+process_mode = 3
+
+[node name="Player2" type="Node2D" parent="."]
+position = Vector2(45, -52)
+script = ExtResource("5_rt2n2")
+
+[node name="Camera2D" type="Camera2D" parent="Player2"]
+zoom = Vector2(3, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player2"]
+position = Vector2(-1, -1)
+texture = ExtResource("6_c16ls")

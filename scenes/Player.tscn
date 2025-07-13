@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cjqldvfwp5ibh"]
+[gd_scene load_steps=4 format=3 uid="uid://cjqldvfwp5ibh"]
 
 [ext_resource type="Script" uid="uid://cbbptvgp4qrrk" path="res://scripts/Player.cs" id="1_8vh34"]
 [ext_resource type="Texture2D" uid="uid://dllq2kfvd7di4" path="res://Assets/0x72_DungeonTilesetII_v1.7/0x72_DungeonTilesetII_v1.7.png" id="2_v6fml"]
-[ext_resource type="PackedScene" uid="uid://2qiciivby3my" path="res://scenes/UI/Spells/spell_button.tscn" id="3_3li8b"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v6fml"]
 radius = 5.98023
@@ -23,32 +22,4 @@ scale = Vector2(1.00331, 1)
 shape = SubResource("CircleShape2D_v6fml")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(5, 5)
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
-anchors_preset = -1
-anchor_left = -0.0121528
-anchor_top = -0.0185185
-anchor_right = 0.030428
-anchor_bottom = 0.0124278
-offset_right = 113.947
-offset_bottom = 46.9468
-scale = Vector2(0.300939, 0.299302)
-size_flags_horizontal = 4
-theme_override_constants/separation = 24
-metadata/_edit_use_anchors_ = true
-
-[node name="SpellButton2" parent="CanvasLayer/HBoxContainer" instance=ExtResource("3_3li8b")]
-layout_mode = 2
-size_flags_horizontal = 0
-
-[node name="SpellButton" parent="CanvasLayer/HBoxContainer" instance=ExtResource("3_3li8b")]
-layout_mode = 2
-
-[node name="SpellButton3" parent="CanvasLayer/HBoxContainer" instance=ExtResource("3_3li8b")]
-layout_mode = 2
-
-[node name="SpellButton4" parent="CanvasLayer/HBoxContainer" instance=ExtResource("3_3li8b")]
-layout_mode = 2
+zoom = Vector2(3, 3)

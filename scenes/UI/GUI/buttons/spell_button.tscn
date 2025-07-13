@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://2qiciivby3my"]
 
-[ext_resource type="Texture2D" uid="uid://dpaqwkh8tgfk2" path="res://icon.svg" id="1_wt7ko"]
-[ext_resource type="Script" uid="uid://dhkspdqyeavmo" path="res://scripts/Spells/SpellButton.cs" id="2_6wwsn"]
-[ext_resource type="Texture2D" uid="uid://cjlkf512gueoe" path="res://Assets/Sprite-0001.png" id="3_ajfps"]
+[ext_resource type="Texture2D" uid="uid://dpaqwkh8tgfk2" path="res://icon.svg" id="1_25abt"]
+[ext_resource type="Script" uid="uid://dhkspdqyeavmo" path="res://scripts/GUI/Buttons/SpellButton.cs" id="2_iyo5j"]
+[ext_resource type="Texture2D" uid="uid://cjlkf512gueoe" path="res://Assets/Sprite-0001.png" id="3_tyc5e"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_ikrb3"]
 
@@ -16,10 +16,10 @@ anchor_bottom = 0.0308642
 offset_top = -20.0
 offset_right = 20.0
 shortcut = SubResource("Shortcut_e8g14")
-texture_normal = ExtResource("1_wt7ko")
+texture_normal = ExtResource("1_25abt")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_6wwsn")
+script = ExtResource("2_iyo5j")
 cooldownBarPath = NodePath("CooldownBar")
 cooldownPath = NodePath("Cooldown")
 keyPath = NodePath("Key")
@@ -45,7 +45,7 @@ grow_vertical = 0
 step = 0.01
 value = 75.0
 fill_mode = 5
-texture_progress = ExtResource("3_ajfps")
+texture_progress = ExtResource("3_tyc5e")
 tint_progress = Color(0.0392157, 0.0392157, 0.0392157, 0.576471)
 
 [node name="Key" type="Label" parent="."]
